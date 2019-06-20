@@ -4,7 +4,6 @@ def badge_maker(name)
   return "Hello, my name is #{name}."
 end
 
-#names = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
 def batch_badge_creator(array)
   counter = 0
@@ -25,9 +24,7 @@ def assign_rooms(list)
 end
 
 def printer (array)
-  
-  assign_rooms(array).each do |room|
-    puts room
-  end
+  assign_rooms(array).each{|rooms| puts rooms}
+  batch_badge_creator(array).each{|badge| puts badge}
 end
 
